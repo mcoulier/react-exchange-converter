@@ -1,5 +1,6 @@
 import './App.css';
 import CurrencyField from './components/CurrencyField';
+import Footer from './components/Footer';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -65,24 +66,27 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1>Currency Converter</h1>
-      <CurrencyField
-        currencies={currencies}
-        selectCurrency={fromCurrency}
-        onChangeCurrency={e => setFromCurrency(e.target.value)}
-        onChangeAmount={handleFromAmountChange}
-        amount={fromAmount}
-      />
-      <h2>=</h2>
-      <CurrencyField
-        currencies={currencies}
-        selectCurrency={toCurrency}
-        onChangeCurrency={e => setToCurrency(e.target.value)}
-        onChangeAmount={handleToAmountChange}
-        amount={toAmount}
-      />
-    </div>
+    <>
+      <div className="App">
+        <h1>Currency Converter</h1>
+        <CurrencyField
+          currencies={currencies}
+          selectCurrency={fromCurrency}
+          onChangeCurrency={e => setFromCurrency(e.target.value)}
+          onChangeAmount={handleFromAmountChange}
+          amount={fromAmount}
+        />
+        <h2>=</h2>
+        <CurrencyField
+          currencies={currencies}
+          selectCurrency={toCurrency}
+          onChangeCurrency={e => setToCurrency(e.target.value)}
+          onChangeAmount={handleToAmountChange}
+          amount={toAmount}
+        />
+      </div>
+      <Footer />
+    </>
   );
 }
 

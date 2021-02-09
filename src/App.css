@@ -1,8 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  margin: 0;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
+  background-color: rgb(65, 65, 65);
+  border: 1px solid #25262A;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #BCFF5C;
 }
 
 body {
-  background-color:slategrey;
   font-family: 'Roboto', sans-serif;
+/*   background: url(/src/assets/background.jpg) no-repeat center center fixed;
+ */  
+  background-size: cover;
+  background-color: #2D2B3A;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.Footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+  font-size: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  background-color: rgb(65, 65, 65);
+}
+
+h2 {
+  font-size: 40px;
 }

@@ -1,4 +1,11 @@
 import { TextField, Select, InputLabel, MenuItem } from '@material-ui/core';
+import { createMuiTheme } from '@material-ui/core/styles';
+
+const theme = createMuiTheme({
+    primary: {
+        main: '#BCFF5C'
+    }
+})
 
 function CurrencyField(props) {
     const {
@@ -11,7 +18,7 @@ function CurrencyField(props) {
 
     return (
         <div className="CurrencyField">
-            <TextField type="number" value={amount} onChange={onChangeAmount}/>
+            <TextField type="number" value={amount} color='primary' onChange={onChangeAmount} />
             <InputLabel id="currency" />
             <Select labelId="currency" id="currency" value={selectCurrency} onChange={onChangeCurrency}>
                 {
