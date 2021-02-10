@@ -11,5 +11,6 @@ Convert currency with up to date exchange rates provided by [Exchange rates API]
 
 ### TO DO
 
-- [ ] Work on styling
+- [x] Work on styling
+- [ ] Add crypto currency data
 - [ ] Implement/learn some data viz
